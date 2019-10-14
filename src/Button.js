@@ -3,10 +3,10 @@ import { MDBBtn } from "mdbreact";
 class Button extends React.Component {
 
 render() {
-    let {text, onClick} = this.props;
+    let {text, onClick, color} = this.props;
     return (
         <div>
-          <MDBBtn gradient="blue" onClick={onClick}>
+          <MDBBtn gradient={color} onClick={onClick}>
             {text}  
           </MDBBtn>  
         </div>

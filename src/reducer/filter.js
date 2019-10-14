@@ -4,6 +4,8 @@ let first = {
 
 export const filter = (state = first, action) => {
     switch(action.type) {
+      case 'DELETE_STORAGE':
+          return {}
        case 'SHOW_ALL':
          return {
            status : "show_all"
